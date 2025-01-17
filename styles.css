@@ -3,6 +3,7 @@
 /* Use CSS selectors and rules to style your portfolio page */
 body {
   font-family: sans-serif;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for dark mode */
 }
 
 h1 {
@@ -43,20 +44,21 @@ h1 {
   }
 }
 
-/* Dark Mode Styles */
+/* Light Mode Styles (Default) */
 body {
-  background-color: #121212; /* Dark background */
-  color: #E0E0E0; /* Light text color for readability */
+  background-color: white; /* Light background */
+  color: black; /* Dark text */
 }
 
 a {
-  color: #BB86FC; /* Light purple link color */
+  color: #6200EE; /* Purple link color */
 }
 
+/* For inputs and buttons in light mode */
 input, textarea, select {
-  background-color: #333333; /* Dark input fields */
-  color: #FFFFFF; /* White text in input fields */
-  border: 1px solid #444444; /* Subtle border */
+  background-color: white; /* Light background for form fields */
+  color: black; /* Black text */
+  border: 1px solid #ccc; /* Light border */
 }
 
 button {
@@ -71,25 +73,63 @@ button:hover {
   background-color: #3700B3; /* Darker purple on hover */
 }
 
-/* For Google Translate element styling */
-.goog-te-banner-frame {
-  display: none !important; /* Hides the default Google Translate banner */
+/* Google Translate element in light mode */
+.goog-te-gadget {
+  background-color: #fff !important; /* Light background for the translate element */
+  color: black !important; /* Dark text for readability */
 }
 
-.goog-te-gadget {
+.goog-te-menu-value {
+  color: black !important; /* Dark text */
+  background-color: #eee !important; /* Light background for the dropdown */
+}
+
+.goog-te-gadget-simple {
+  background-color: #fff !important; /* Background for the Translate element */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212; /* Dark background */
+  color: #E0E0E0; /* Light text color for readability */
+}
+
+body.dark-mode a {
+  color: #BB86FC; /* Light purple link color */
+}
+
+body.dark-mode input, body.dark-mode textarea, body.dark-mode select {
+  background-color: #333333; /* Dark input fields */
+  color: #FFFFFF; /* White text in input fields */
+  border: 1px solid #444444; /* Subtle border */
+}
+
+body.dark-mode button {
+  background-color: #6200EE; /* Purple button background */
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+body.dark-mode button:hover {
+  background-color: #3700B3; /* Darker purple on hover */
+}
+
+/* Google Translate element in dark mode */
+body.dark-mode .goog-te-gadget {
   background-color: #333333 !important; /* Dark background for the translate element */
   color: white !important; /* Light text for readability */
 }
 
-.goog-te-menu-value {
-  color: white !important; /* Light text in the dropdown */
+body.dark-mode .goog-te-menu-value {
+  color: white !important; /* Light text */
   background-color: #444444 !important; /* Dark background for the dropdown */
 }
 
-.goog-te-gadget-simple {
+body.dark-mode .goog-te-gadget-simple {
   background-color: #333333 !important; /* Background for the Translate element */
 }
-
 
 #github-link {
   color: blue;
