@@ -16,7 +16,7 @@
       function googleTranslateElementInit() {
         new google.translate.TranslateElement({
           pageLanguage: 'en', // Set the default language of the page (English)
-          includedLanguages: 'zh-CN', // Include Chinese (Simplified)
+          includedLanguages: 'zh-CN', 'vi_VN' // Include Chinese (Simplified) and Vietnamese
           layout: google.translate.TranslateElement.InlineLayout.SIMPLE
         }, 'google_translate_element');
       }
@@ -31,8 +31,9 @@
     <!-- Welcome message -->
     <div class="welcome-message">Welcome to my website!</div>
 
-    <header>Portfolio</header>
+    <header></header>
 
+    <li>See page translation here:</li>
     <!-- Google Translate Button -->
     <div id="google_translate_element"></div> <!-- The Google Translate widget will appear here -->
 
