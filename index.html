@@ -20,7 +20,12 @@
         layout: google.translate.TranslateElement.InlineLayout.SIMPLE
     }, 'google_translate_element');
   }
+      function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
 </script>
+    <!-- Dark Mode Toggle Button -->
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
 
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     
