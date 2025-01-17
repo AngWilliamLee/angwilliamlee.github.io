@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <!-- This is an HTML comment. Comments are ignored by the browser and do not appear on the document. -->
-  <!-- An HTML page has a <head> and a <body>. -->
-  
   <head>
     <title>angwilliamlee.github.io</title>
-    <!-- [meta tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta) contain information about the page, which cannot be represented by other tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="The portfolio of a JC student"> <!-- search engine description used by Google. Edit this. -->
-    <meta name="keyword" content="portfolio">  <!-- search engine tags used by Google. Add more of your own. -->
+    <meta name="description" content="The portfolio of a JC student">
+    <meta name="keyword" content="portfolio">
     
-    <!-- Add Google Translate widget script -->
+    <!-- Google Translate widget script -->
     <script type="text/javascript">
       function googleTranslateElementInit() {
-      new google.translate.TranslateElement({
-        pageLanguage: 'vi', // Set the default language of the page to Vietnamese
-        includedLanguages: 'zh-CN,vi', // Include Chinese (Simplified) and Vietnamese
-        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-    }, 'google_translate_element');
-  }
+        new google.translate.TranslateElement({
+          pageLanguage: 'vi', // Set the default language to Vietnamese
+          includedLanguages: 'zh-CN,vi', // Include Chinese (Simplified) and Vietnamese
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+      }
+
       function toggleDarkMode() {
-      document.body.classList.toggle('dark-mode');
-    }
-</script>
+        document.body.classList.toggle('dark-mode');
+      }
+    </script>
+
+    <!-- Google Translate Widget Script -->
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS for defining your own stylesheet -->
+  </head>
+
+  <body>
     <!-- Dark Mode Toggle Button -->
     <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
 
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    
-    <!-- If you'd like nicer "default" theming for your portfolio, consider using a baseline css stylesheet e.g. https://newcss.net/ -->
-    <link rel="stylesheet" href="styles.css">  <!-- External CSS for defining your own stylesheet -->
-  </head>
-  
-  <body>
     <!-- Welcome message -->
     <div class="welcome-message">Welcome to my website!</div>
 
     <header></header>
 
-    <p>See page translation here:</li>
+    <p>See page translation here:</p>
     <!-- Google Translate Button -->
     <div id="google_translate_element"></div> <!-- The Google Translate widget will appear here -->
 
@@ -53,9 +52,11 @@
 
     <section>
       <h2>Education</h2>
-      <li>Primary school: Sydney Grammar School (Australia)</li>
-      <li>Secondary school: St. Joseph's Institution (Singapore)</li>
-      <li>Tertiary school: Nanyang Junior College (Singapore)</li>
+      <ul>
+        <li>Primary school: Sydney Grammar School (Australia)</li>
+        <li>Secondary school: St. Joseph's Institution (Singapore)</li>
+        <li>Tertiary school: Nanyang Junior College (Singapore)</li>
+      </ul>
     </section>
 
     <section>
@@ -65,8 +66,10 @@
 
     <section>
       <h3>Contact me</h3>
-      <li>+65 8888 8888</li>
-      <li>ang.william.lee_2024@nyjc.edu.sg</li>
+      <ul>
+        <li>+65 8888 8888</li>
+        <li>ang.william.lee_2024@nyjc.edu.sg</li>
+      </ul>
     </section>
 
     <footer>footer</footer>
