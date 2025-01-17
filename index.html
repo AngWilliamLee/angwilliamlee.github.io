@@ -3,7 +3,6 @@
   <!-- This is an HTML comment. Comments are ignored by the browser and do not appear on the document. -->
   <!-- An HTML page has a <head> and a <body>. -->
   
-  <!-- Information in the <head> element does not appear on the document. This element is usually used to store information used by the document. -->
   <head>
     <title>angwilliamlee.github.io</title>
     <!-- [meta tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta) contain information about the page, which cannot be represented by other tags -->
@@ -12,17 +11,30 @@
     <meta name="description" content="The portfolio of a JC student"> <!-- search engine description used by Google. Edit this. -->
     <meta name="keyword" content="portfolio">  <!-- search engine tags used by Google. Add more of your own. -->
     
+    <!-- Add Google Translate widget script -->
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+          pageLanguage: 'en', // Set the default language of the page (English)
+          includedLanguages: 'zh-CN', // Include Chinese (Simplified)
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+      }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
     <!-- If you'd like nicer "default" theming for your portfolio, consider using a baseline css stylesheet e.g. https://newcss.net/ -->
     <link rel="stylesheet" href="styles.css">  <!-- External CSS for defining your own stylesheet -->
   </head>
   
-  <!-- The <body> tag is where the visible content goes. -->
-  <!-- See https://developer.mozilla.org/en-US/docs/Web/HTML/Content_categories for tips on organising content elements. -->
   <body>
     <!-- Welcome message -->
     <div class="welcome-message">Welcome to my website!</div>
 
     <header>Portfolio</header>
+
+    <!-- Google Translate Button -->
+    <div id="google_translate_element"></div> <!-- The Google Translate widget will appear here -->
 
     <section>
       <h1>Your Name / About Me</h1>
