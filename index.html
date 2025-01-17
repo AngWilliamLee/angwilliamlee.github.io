@@ -14,13 +14,14 @@
     <!-- Add Google Translate widget script -->
     <script type="text/javascript">
       function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-          pageLanguage: 'en', // Set the default language of the page (English)
-          includedLanguages: 'zh-CN', 'vi_VN', // Include Chinese (Simplified) and Vietnamese
-          layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-        }, 'google_translate_element');
-      }
-    </script>
+      new google.translate.TranslateElement({
+        pageLanguage: 'vi', // Set the default language of the page to Vietnamese
+        includedLanguages: 'zh-CN,vi', // Include Chinese (Simplified) and Vietnamese
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     
     <!-- If you'd like nicer "default" theming for your portfolio, consider using a baseline css stylesheet e.g. https://newcss.net/ -->
@@ -33,7 +34,7 @@
 
     <header></header>
 
-    <li>See page translation here:</li>
+    <p>See page translation here:</li>
     <!-- Google Translate Button -->
     <div id="google_translate_element"></div> <!-- The Google Translate widget will appear here -->
 
